@@ -1,1 +1,1 @@
-# Ukol-Piskvorky-5
+Úkol: Piškvorky 5/5
