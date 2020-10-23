@@ -2,6 +2,8 @@
 
 Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](https://github.com/Czechitas-podklady-WEB/Ukol-Piskvorky-4). Tvým úkolem bude kontrolovat, jestli jeden z hráčů nevyhrál.
 
+![hra](zadani/hra.gif)
+
 ## Zadání
 
 1. Pokračuj v repozitáři `piskvorky`.
