@@ -116,14 +116,14 @@ Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](ht
 
       	let inColumn = 1
       	// Koukni nahoru
-      	i = origin.column
+      	i = origin.row
       	while (i > 0 && symbol === getSymbol(getField(i - 1, origin.column))) {
       		inColumn++
       		i--
       	}
 
       	// Koukni doprava
-      	i = origin.column
+      	i = origin.row
       	while (
       		i < boardSize - 1 &&
       		symbol === getSymbol(getField(i + 1, origin.column))
