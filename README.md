@@ -122,7 +122,7 @@ Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](ht
       		i--
       	}
 
-      	// Koukni doprava
+      	// Koukni dolu
       	i = origin.row
       	while (
       		i < boardSize - 1 &&
