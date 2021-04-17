@@ -13,7 +13,7 @@ Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](ht
    ![řada](zadani/rada.png)
    ![sloupec](zadani/sloupec.png)
 
-1. Pro detekci výherního tahu budeš potřebovat několik pomocných funkcí.
+1. Pro detekci výherního tahu budeš potřebovat několik pomocných funkcí. Každou po nasazení otestuj, ať víš, že dělá to, co má. V závěru zapadnou do větší skládačky, ale kontrolovat si postup je jednodušší po menších částech.
 
    1. Napiš funkci `getPosition(field)`, která pro dané políčko vrátí objekt s číslem řádku a sloupce. Pro levé horní políčko vrať `{row: 0, column: 0}`, pro pravé dolní `{row: 9, column: 9}`, pro levé dolní `{row: 9, column: 0}`, …
 
