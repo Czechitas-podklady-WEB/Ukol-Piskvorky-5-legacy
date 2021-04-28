@@ -1,6 +1,6 @@
 # Úkol: Piškvorky 5/5
 
-Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](https://github.com/Czechitas-podklady-WEB/Ukol-Piskvorky-4). Tvým úkolem bude kontrolovat, jestli jeden z hráčů vyhrál.
+Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](https://github.com/Czechitas-podklady-WEB/Ukol-Piskvorky-4). Budeš kontrolovat, jestli jeden z hráčů vyhrál.
 
 ![hra](zadani/hra.gif)
 
