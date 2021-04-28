@@ -61,10 +61,7 @@ Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](ht
       ```javascript
       const getPosition = (field) => {
       	let fieldIndex = 0
-      	while (fieldIndex < fields.length) {
-      		if (field === fields[fieldIndex]) {
-      			break
-      		}
+      	while (fieldIndex < fields.length && field !== fields[fieldIndex]) {
       		fieldIndex++
       	}
 
