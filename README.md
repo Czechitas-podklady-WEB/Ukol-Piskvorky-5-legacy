@@ -15,50 +15,6 @@ Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](ht
 
 1. Pro detekci výherního tahu budeš potřebovat několik pomocných funkcí. Každou po nasazení otestuj, ať víš, že dělá to, co má. V závěru zapadnou do větší skládačky, ale kontrolovat si postup je jednodušší po menších částech.
 
-   1. Napiš funkci `getPosition(field)`, která pro dané políčko vrátí objekt s číslem řádku a sloupce. Pro levé horní políčko vrať `{row: 0, column: 0}`, pro pravé dolní `{row: 9, column: 9}`, pro levé dolní `{row: 9, column: 0}`, …
-
-      <details>
-      <summary>Nápověda</summary>
-
-      ```javascript
-      const boardSize = 10 // 10x10
-      const fields = document.querySelectorAll('.board__field') // Selektor pozměň tak, aby odpovídal tvému kódu.
-
-      const getPosition = (field) => {
-      	let fieldIndex = 0
-      	while (fieldIndex < fields.length) {
-      		if (field === fields[fieldIndex]) {
-      			break
-      		}
-      		fieldIndex++
-      	}
-
-      	return {
-      		row: Math.floor(fieldIndex / boardSize),
-      		column: fieldIndex % boardSize,
-      	}
-      }
-      ```
-
-      </details>
-
-      Kód v nápovědě předpokládá následují pořadí políček v html:
-
-      ![pořadí](zadani/indexy.png)
-
-      První cifra odpovídá řádku, druhá sloupci.
-
-   1. Napiš funkci `getField(row, column)`, která naopak pro číslo řádku a sloupce vrátí příslušný prvek.
-
-      <details>
-      <summary>Nápověda</summary>
-
-      ```javascript
-      const getField = (row, column) => fields[row * boardSize + column]
-      ```
-
-      </details>
-
    1. Přichystej si funkci, `getSymbol(field)`, která pro políčko s křížkem vrátí řetězec `'cross'`, pro kroužek `'circle'` a pro neobsazené políčko hodnotu `undefined`.
 
       <details>
@@ -71,6 +27,50 @@ Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](ht
       		return 'cross'
       	} else if (field.classList.contains('board__field--circle')) {
       		return 'circle'
+      	}
+      }
+      ```
+
+      </details>
+
+   1. Napiš funkci `getField(row, column)`, která pro číslo řádku a sloupce vrátí příslušný prvek.
+
+      <details>
+      <summary>Nápověda</summary>
+
+      ```javascript
+      const boardSize = 10 // 10x10
+      const fields = document.querySelectorAll('.board__field') // Selektor pozměň tak, aby odpovídal tvému kódu.
+
+      const getField = (row, column) => fields[row * boardSize + column]
+      ```
+
+      </details>
+
+      Kód v nápovědě předpokládá následují pořadí políček v html:
+
+      ![pořadí](zadani/indexy.png)
+
+      První cifra odpovídá řádku, druhá sloupci.
+
+   1. Napiš funkci `getPosition(field)`, která naopak pro dané políčko vrátí objekt s číslem řádku a sloupce. Pro levé horní políčko vrať `{row: 0, column: 0}`, pro pravé dolní `{row: 9, column: 9}`, pro levé dolní `{row: 9, column: 0}`, …
+
+      <details>
+      <summary>Nápověda</summary>
+
+      ```javascript
+      const getPosition = (field) => {
+      	let fieldIndex = 0
+      	while (fieldIndex < fields.length) {
+      		if (field === fields[fieldIndex]) {
+      			break
+      		}
+      		fieldIndex++
+      	}
+
+      	return {
+      		row: Math.floor(fieldIndex / boardSize),
+      		column: fieldIndex % boardSize,
       	}
       }
       ```
