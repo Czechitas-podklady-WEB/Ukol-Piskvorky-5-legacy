@@ -13,7 +13,7 @@ Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](ht
    ![řada](zadani/rada.png)
    ![sloupec](zadani/sloupec.png)
 
-1. Pro detekci výherního tahu budeš potřebovat několik pomocných funkcí. Každou po nasazení otestuj, ať víš, že dělá to, co má. V závěru zapadnou do větší skládačky, ale kontrolovat si postup je jednodušší po menších částech.
+1. Pro detekci výherního tahu budeš potřebovat několik pomocných funkcí. Každou si pro sebe na zkoušku po nasazení otestuj, ať víš, že dělá to, co má. V závěru zapadnou do větší skládačky, ale kontrolovat si postup je jednodušší po menších částech.
 
    1. Přichystej si funkci, `getSymbol(field)`, která pro políčko s křížkem vrátí řetězec `'cross'`, pro kroužek `'circle'` a pro neobsazené políčko hodnotu `undefined`.
 
