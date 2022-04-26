@@ -42,7 +42,9 @@ Před tebou je závěrečný úkol, který přímo navazuje na [Piškvorky 4](ht
       const boardSize = 10 // 10x10
       const fields = document.querySelectorAll('.board__field') // Selektor pozměň tak, aby odpovídal tvému kódu.
 
-      const getField = (row, column) => fields[row * boardSize + column]
+      const getField = (row, column) => {
+         return fields[row * boardSize + column]
+      }
       ```
 
       </details>
